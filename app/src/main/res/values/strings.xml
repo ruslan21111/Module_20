@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FilmSearch</string>
+    <string name="https_www_movieposters_com">Постеры представлены https://www.movieposters.com/</string>
+    <string name="button1">Menu</string>
+    <string name="isbrannoe">ИЗБРАННОЕ</string>
+    <string name="watch_latter">ПОСМОТРЕТЬ ПОЗЖЕ</string>
+    <string name="all">ПОДБОРКИ</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="menu">Menu</string>
+
+</resources>
