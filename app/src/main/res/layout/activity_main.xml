@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -36,64 +35,55 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="wrap_content"
+        android:id="@+id/top_bar"
+        android:layout_width="396dp"
         android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:elevation="5dp"
-        app:cardCornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:orientation="horizontal">
 
-
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:contentDescription="image3"
-                android:padding="2dp"
-                android:scaleType="fitXY"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/avatar" />
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:contentDescription="image4"
-                android:padding="2dp"
-                android:scaleType="fitXY"
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/interstellar" />
 
             <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:contentDescription="TODO"
-                android:padding="2dp"
-                android:scaleType="fitXY"
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1 "
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/legend" />
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="95dp"
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="image5"
-                android:padding="2dp"
-                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/prometeus" />
-
-
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
+    </androidx.cardview.widget.CardView>
 
 
 
@@ -108,15 +98,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/button_bar" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/textview"
+        android:textSize="15dp"
+        android:textColor="#6E6262"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
