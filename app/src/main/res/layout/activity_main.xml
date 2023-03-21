@@ -103,8 +103,8 @@
         android:autoLink="web"
         android:linksClickable="true"
         android:text="@string/textview"
-        android:textColor="#6E6262"
-        android:textSize="15dp"
+        android:textColor="#E2ECE7"
+        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,23 +116,27 @@
         android:layout_height="408dp"
         android:layout_margin="16dp"
         android:columnCount="2"
+        android:layoutAnimation="@anim/my_anim_layout"
         android:orientation="horizontal"
         android:useDefaultMargins="true"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_bar"
-        app:layout_constraintVertical_bias="0.587">
+        app:layout_constraintVertical_bias="0.478">
 
 
         <androidx.cardview.widget.CardView
+
             android:id="@+id/poster_1"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="15dp">
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:clickable="true"
+            android:stateListAnimator="@animator/anim_click"
+            app:cardCornerRadius="25dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -142,13 +146,13 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
         <androidx.cardview.widget.CardView
             android:id="@+id/poster_2"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="15dp">
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:clickable="true"
+            android:stateListAnimator="@animator/anim_click"
+            app:cardCornerRadius="25dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -158,12 +162,13 @@
         </androidx.cardview.widget.CardView>
 
 
-
         <androidx.cardview.widget.CardView
             android:id="@+id/poster_3"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="15dp">
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:clickable="true"
+            android:stateListAnimator="@animator/anim_click"
+            app:cardCornerRadius="25dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -175,9 +180,11 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/poster_4"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="15dp">
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:clickable="true"
+            android:stateListAnimator="@animator/anim_click"
+            app:cardCornerRadius="25dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -185,11 +192,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/wednesday" />
         </androidx.cardview.widget.CardView>
-
-
-
-
-
 
 
     </GridLayout>
